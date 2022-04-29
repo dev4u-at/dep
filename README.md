@@ -8,6 +8,7 @@ This **REPO** provides **terraform-** and **k8s-** manifests to build a **data-e
 ## Exoscale
 ## Terraform
 ## K8s
+## Helm
 
 
 ## Treeview
