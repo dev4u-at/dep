@@ -13,8 +13,8 @@ This **REPO** provides **terraform-** and **k8s-** manifests to build a **data-e
 ## Treeview
 ├───k8s
 │   ├───autoscaling
-│   │       hpa_adv.yaml
-│   │       limit_pod_ressources.yaml
+│   │       ├───hpa_adv.yaml
+│   │       ├───limit_pod_ressources.yaml
 │   │
 │   └───traefik
 │           traefik_ingress.yaml
