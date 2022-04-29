@@ -11,6 +11,31 @@ This **REPO** provides **terraform-** and **k8s-** manifests to build a **data-e
 
 
 ## Treeview
+├───k8s
+│   ├───autoscaling
+│   │       hpa_adv.yaml
+│   │       limit_pod_ressources.yaml
+│   │
+│   └───traefik
+│           traefik_ingress.yaml
+│
+└───terraform
+    ├───longhorn
+    │       longhorn.tf
+    │
+    ├───nextcloud
+    │       nextcloud.tf
+    │       values.yaml
+    │
+    ├───s3
+    │       s3.tf
+    │
+    ├───sks
+    │       sks.tf
+    │
+    └───traefik
+            traefik.tf
+            values.yaml
 
 ## Flowchart
 ```mermaid
