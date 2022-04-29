@@ -92,8 +92,3 @@ resource "exoscale_security_group_rule" "sks_nodes_ccm" {
   description       = "NodePort services"
   cidr              = "0.0.0.0/0"
 }
-
-output "kubeconfig" {
-  value     = module.sks.kubeconfig
-  sensitive = true
-}
