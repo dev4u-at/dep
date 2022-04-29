@@ -12,6 +12,7 @@ This **REPO** provides **terraform-** and **k8s-** manifests to build a **data-e
 
 
 ## Treeview
+```bash
 ├───k8s
 │   ├───autoscaling
 │   │       ├───hpa_adv.yaml
@@ -37,6 +38,7 @@ This **REPO** provides **terraform-** and **k8s-** manifests to build a **data-e
     └───traefik
             traefik.tf
             values.yaml
+```
             
 ## Flowchart
 ```mermaid
