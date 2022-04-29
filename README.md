@@ -36,7 +36,7 @@ This **REPO** provides **terraform-** and **k8s-** manifests to build a **data-e
     └───traefik
             traefik.tf
             values.yaml
-
+            
 ## Flowchart
 ```mermaid
 graph LR
