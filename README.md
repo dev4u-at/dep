@@ -1,49 +1,52 @@
 # Data-Exchange-Platform
 
 This **REPO** provides **terraform-** and **k8s-** manifests to build a **data-exchange-platform** with the **infrastructure-as-a-code** approach.
+For further informations regading the components, visit the links below.
 
 
 # Components
 
-## Exoscale
-## Terraform
-## K8s
-## Helm
+## [Exoscale](https://www.exoscale.com/)
+## [Terraform](https://www.terraform.io/)
+## [K8s](https://kubernetes.io/)
+## [Helm](https://helm.sh/)
+## [Nextcloud](https://nextcloud.com/)
+## [MariaDB](https://mariadb.org/)
+## [Traefik](https://doc.traefik.io/traefik/providers/kubernetes-ingress/)
+
 
 
 ## Treeview
 ```bash
 ├───k8s
-│   ├───autoscaling
-│   │       ├───hpa_adv.yaml
-│   │       ├───limit_pod_ressources.yaml
-│   │
-│   └───traefik
-│           traefik_ingress.yaml
+│       hpa.yaml #Horizontal POD Autoscaler Configfile
+│       ingress-rule.yaml #Ingress Rule for Traefik
+│       limit_pod_ressources.yaml #Limit the POD Ressource for HPA
+│       s3-secret.yaml #S3 Secrets for Longhorn Backup
 │
 └───terraform
     ├───longhorn
-    │       longhorn.tf
+    │       longhorn.tf #Longhorn Deplyoment via HELM
     │
     ├───nextcloud
-    │       nextcloud.tf
-    │       values.yaml
+    │       nextcloud.tf # Nextcloud Deplyoment via HELM
+    │       values.yaml #Nextcloud Custom Values File
     │
     ├───s3
-    │       s3.tf
+    │       dep-longhorn-backup.tf #S3 Bucket Deployment at Exoscale
     │
     ├───sks
-    │       sks.tf
+    │       sks.tf #Kubernetes-Cluster Deployment at Exoscale
     │
     └───traefik
-            traefik.tf
-            values.yaml
+            traefik.tf #Traefik Deplyoment via HELM
+            values.yaml #Traefik Custom Values File
 ```
             
 ## Flowchart
 ```mermaid
 graph LR
-A[Admin-Station] --> B((terraform.exe))
+A[Admin-Station] --> B((terraform.exe/helm.exe))
 A --> C((kubectl.exe))
 B --> D{Data-Exchange-Platform}
 C --> D
