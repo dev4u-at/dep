@@ -48,11 +48,4 @@ resource "aws_s3_bucket_acl" "dep-longhorn-backup-acl" {
 
 
 
-/*
-resource "aws_s3_bucket_object" "testobj" {
-  bucket = aws_s3_bucket.testbucket.bucket
-  acl = "public-read"
-  key = "some-text.txt"
-  source = "some-text.txt"
-  etag   = md5(file("some-text.txt"))
-*/
+
