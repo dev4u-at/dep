@@ -19,17 +19,19 @@ For further informations regading the components, visit the links below.
 ## Treeview
 ```bash
 ├───k8s
+│       cloudflare-credentials.yaml #Cloudflare Credentials for LetsEncryptCert for Traefik
 │       hpa.yaml #Horizontal POD Autoscaler Configfile
 │       ingress-rule.yaml #Ingress Rule for Traefik
-│       limit_pod_ressources.yaml #Limit the POD Ressource for HPA
+│       limit_pod_ressources.yaml
 │       s3-secret.yaml #S3 Secrets for Longhorn Backup
+│
 │
 └───terraform
     ├───longhorn
     │       longhorn.tf #Longhorn Deplyoment via HELM
     │
     ├───nextcloud
-    │       nextcloud.tf # Nextcloud Deplyoment via HELM
+    │       nextcloud.tf #Nextcloud Deplyoment via HELM
     │       values.yaml #Nextcloud Custom Values File
     │
     ├───s3
