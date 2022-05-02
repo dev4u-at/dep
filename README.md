@@ -4,7 +4,7 @@ This **REPO** provides **terraform-** and **k8s-** manifests to build a **data-e
 For further informations regading the components, visit the links below.
 
 # BIG-Picture
-![Data-Exchange-Platform](https://www.dev4u.at/mt/PoC_public.jpg)
+![Data-Exchange-Platform](https://sos-at-vie-1.exo.io/dep-longhorn-backup/mt/PoC_public.jpg)
 
 
 # INFRASTRUCTURE STACK
