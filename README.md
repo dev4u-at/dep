@@ -1,6 +1,6 @@
 # Data-Exchange-Platform
 
-This **REPO** provides **terraform-** and **k8s-** manifests to build a **data-exchange-platform** with the **infrastructure-as-a-code** approach.
+This **REPO** provides **terraform-** and **k8s-** manifests to build a **secure and scaleable data-exchange-platform** with the **infrastructure-as-a-code** approach.
 For further informations regading the components, visit the links below.
 
 # BIG-Picture
