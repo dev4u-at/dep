@@ -6,7 +6,9 @@ For further informations regading the components, visit the links below.
 # BIG-Picture
 ![Data-Exchange-Platform](https://www.dev4u.at/mt/PoC_public.jpg)
 
+
 # INFRASTRUCTURE STACK
+
 ## [Exoscale](https://www.exoscale.com/)
 ## [Terraform](https://www.terraform.io/)
 ## [K8s](https://kubernetes.io/)
