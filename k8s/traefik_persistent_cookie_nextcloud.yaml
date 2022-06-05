@@ -3,6 +3,7 @@ kind: Service
 metadata:
   annotations:
     #Persistent Session Cookie Settings for the traefik loadbalancer service
+    #have to set within the nextcloud service manifest
     traefik.ingress.kubernetes.io/service.sticky.cookie: "true"
     traefik.ingress.kubernetes.io/service.sticky.cookie.name: dep
     traefik.ingress.kubernetes.io/service.sticky.cookie.secure: "true"
